@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet( urlPatterns = {"/logout.do"},
-           initParams = {@WebInitParam(name = "LOGIN-VIEW", value = "index.html")}
+           initParams = {@WebInitParam(name = "LOGIN-VIEW", value = "index.jsp")}
 )
 public class Logout extends HttpServlet {
     private String LOGIN_VIEW ;
