@@ -127,49 +127,15 @@ public class UserService {
             file.delete();
         }
     }
-/*
 
-    public Map<Date, String> readMessage(String username)
-            throws FileNotFoundException, IOException {
-        File border = new File(USERS + "/" + username);
-        String[] txts = border.list(filenameFilter);
-        Map<Date, String> message = new TreeMap<Date, String>(comparator);
-        for (String txt : txts) {
-            BufferedReader reader = new BufferedReader(
-                    new InputStreamReader(
-                            new FileInputStream(USERS + "/" + username + "/" + txt), "UTF-8"));
-            String text = null;
-            StringBuilder builder = new StringBuilder();
-            while ((text = reader.readLine()) != null) {
-                builder.append(text);
-
+    public boolean isUerExisted(String username){
+        if(username != null){
+            for(String files : new File(USERS).list()){
+                if(username.equals(files)){
+                    return true;
+                }
             }
-            Date date = new Date(
-                    Long.parseLong(txt.substring(0, txt.indexOf(".txt"))));
-            message.put(date, builder.toString());
-            reader.close();
-
         }
-        return message;
-
+        return false;
     }
-
-    public void addMessage(String username, String blabla)
-            throws IOException
-    {
-        String file = USERS + "/" + username + "/" + new Date().getTime() + ".txt";
-        BufferedWriter writer = new BufferedWriter(
-                new OutputStreamWriter(new FileOutputStream(file),"UTF-8"));
-        writer.write(blabla);
-        writer.close();
-    }
-
-    public void deleteMessage(String username,String message){
-        File file = new File(USERS +"/" +username +"/" + message+".txt");
-        if(file.exists()){
-            file.delete();
-        }
-    }
-*/
-
 }
