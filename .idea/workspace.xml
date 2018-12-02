@@ -6,29 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d561223-955a-49dd-980e-b2a12f0cec7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/img/mi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webjsp_war_exploded/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webjsp_war_exploded/img/weibo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/index.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webjsp_war_exploded/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webjsp_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webjsp_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webjsp_war_exploded/member.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webjsp_war_exploded/member.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webjsp_war_exploded/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webjsp_war_exploded/sucess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webjsp_war_exploded/sucess.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cc/openhome/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cc/openhome/controller/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cc/openhome/controller/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cc/openhome/controller/Logout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cc/openhome/controller/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cc/openhome/controller/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cc/openhome/web/MemberFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cc/openhome/web/MemberFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/weibo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/member.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/member.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sucess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/sucess.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="0d561223-955a-49dd-980e-b2a12f0cec7a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/web/member.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="417">
-              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+              <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -51,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/web/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -63,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/web/sucess.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -84,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/src/cc/openhome/controller/Login.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -93,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/src/cc/openhome/controller/Register.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
-              <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
               <folding>
                 <element signature="e#1459#1467#0" expanded="true" />
               </folding>
@@ -225,7 +203,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543744748790" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543744771759" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/img" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -335,16 +313,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543729075901</updated>
-      <workItem from="1543729082059" duration="12519000" />
+      <workItem from="1543729082059" duration="12771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12519000" />
+    <option name="totallyTimeSpent" value="12771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1296" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -430,7 +407,7 @@
     <entry file="file://$PROJECT_DIR$/src/cc/openhome/controller/Register.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
           <folding>
             <element signature="e#1459#1467#0" expanded="true" />
           </folding>
@@ -440,7 +417,7 @@
     <entry file="file://$PROJECT_DIR$/src/cc/openhome/controller/Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -457,14 +434,14 @@
     <entry file="file://$PROJECT_DIR$/web/member.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -480,7 +457,7 @@
     <entry file="file://$PROJECT_DIR$/web/sucess.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
