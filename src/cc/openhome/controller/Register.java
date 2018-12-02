@@ -32,7 +32,7 @@ public class    Register extends HttpServlet {
         String email = req.getParameter("email");
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        String confirmedPasswd = req.getParameter("confirmedPasswd");
+        String confirmedPasswd = req.getParameter("confirmPwd");
 
         UserService userService = (UserService)
                 getServletContext().getAttribute("userService");
