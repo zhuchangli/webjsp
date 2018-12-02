@@ -11,7 +11,7 @@ import java.io.IOException;
         urlPatterns = {"/delete.do","/logout.do",
         "/message.do","/member.jsp"},
         initParams = {
-                @WebInitParam(name = "LOGIN_VIEW",value = "index.html")
+                @WebInitParam(name = "LOGIN_VIEW",value = "index.jsp")
         }
 )
 

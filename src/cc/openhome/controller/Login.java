@@ -12,7 +12,7 @@ import java.io.*;
 
 @WebServlet(urlPatterns = {"/login.do"},initParams = {
         @WebInitParam(name = "SUCESS_VIEW",value = "member.jsp"),
-        @WebInitParam(name = "ERROR_VIEW",value = "index.html")}
+        @WebInitParam(name = "ERROR_VIEW",value = "index.jsp")}
 )
 
 public class Login extends HttpServlet {
@@ -36,7 +36,10 @@ public class Login extends HttpServlet {
 
             req.getSession().setAttribute("login",username);
             page = SUCESS_VIEW;
+        }else {
+            req.setAttribute("error","名称或密码错误");
+            page = ERROR_VIEW;
         }
-        resp.sendRedirect(page);
+        req.getRequestDispatcher(page).forward(req,resp);
     }
 }

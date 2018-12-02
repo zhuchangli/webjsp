@@ -21,7 +21,7 @@
 </head>
 <body>
      <div class="leftPanel">
-         <img src="img/weibo.jpg" alt="微博" width="120" height="100"/>
+         <img src="img/mi.png" alt="微博" width="120" height="100"/>
          <br><br>
          <a href='logout.do?username="${sessionScope.login}"'>
              注销${sessionScope.login}

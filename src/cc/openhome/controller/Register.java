@@ -1,4 +1,4 @@
-package cc.openhome.controler;
+package cc.openhome.controller;
 
 import cc.openhome.model.UserService;
 
@@ -15,7 +15,7 @@ import java.util.List;
 @WebServlet(
         urlPatterns = {"/register.do"},
         initParams = {@WebInitParam(name = "SUCESS_VIEW",value = "sucess.jsp"),
-        @WebInitParam(name = "ERROR_VIEW",value = "error.jsp")}
+        @WebInitParam(name = "ERROR_VIEW",value = "register.jsp")}
 )
 public class    Register extends HttpServlet {
     private String SUCCESS_VIEW;
