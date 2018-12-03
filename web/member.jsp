@@ -27,7 +27,7 @@
              注销${sessionScope.login}
          </a>
      </div>
-     <form method="post" action="message.do">
+     <form method="post" action="cmessage.jsp">
          分享新鲜事...<br>
      <%
          String blabla = (String) request.getAttribute("blabla");

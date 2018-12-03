@@ -18,7 +18,7 @@
     <div style="color: rgb(255,0,0);">
     ${requestScope.error}
   </div>
-    <form method="post" action="login.do">
+    <form method="post" action="login.jsp">
       <table bgcolor="#cccccc">
         <tr>
           <td colspan="2">会员登录</td>

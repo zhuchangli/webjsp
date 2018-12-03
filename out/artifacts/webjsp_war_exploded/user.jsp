@@ -46,8 +46,8 @@
     }
 %>
 <%
+   }
     else{
-}
 %>
     <h1 style="color: rgb(255,0,0);">
         ${requestScope.username} 用户不存在

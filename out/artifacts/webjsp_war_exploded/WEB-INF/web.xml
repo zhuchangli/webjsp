@@ -14,4 +14,52 @@
             <default-content-type>text/html</default-content-type>
         </jsp-property-group>
     </jsp-config>
+
+    <servlet>
+        <servlet-name>loginjsp</servlet-name>
+        <jsp-file>/ctrjsp/Login.jsp</jsp-file>
+        <init-param>
+            <param-name>SUCESS_VIEW</param-name>
+            <param-value>member.jsp</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ERROR_VIEW</param-name>
+            <param-value>index.jsp</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginjsp</servlet-name>
+        <url-pattern>/login.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Registerjsp</servlet-name>
+        <jsp-file>/ctrjsp/Register.jsp</jsp-file>
+        <init-param>
+            <param-name>SUCESS_VIEW</param-name>
+            <param-value>sucess.jsp</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ERROR_VIEW</param-name>
+            <param-value>register.jsp</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Registerjsp</servlet-name>
+        <url-pattern>/cregister.jsp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Messagejsp</servlet-name>
+        <jsp-file>/ctrjsp/Message.jsp</jsp-file>
+        <init-param>
+            <param-name>MEMBER_VIEW</param-name>
+            <param-value>member.jsp</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Messagejsp</servlet-name>
+        <url-pattern>/cmessage.jsp</url-pattern>
+    </servlet-mapping>
+
 </web-app>

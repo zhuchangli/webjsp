@@ -31,7 +31,7 @@
     }
 %>
      <h1>会员注册</h1>
-     <form method="post" action="register.do">
+     <form method="post" action="cregister.jsp">
          <table bgcolor="#cccccc">
              <tr>
                  <td>邮件地址: </td>
