@@ -15,7 +15,7 @@
     if(blahs != null){
 %>
     <div class="leftPanel">
-        <img src="img/mi.png" alt="blabla 微博"/>
+        <img src="/img/mao.jpeg" alt="首页照片" width="120" height="100">
         <br><br>${requestScope.username}的微博
     </div>
     <table style="text-align: left;width: 510px; height: 88px"

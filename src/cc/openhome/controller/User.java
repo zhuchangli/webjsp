@@ -18,7 +18,7 @@ import java.util.List;
 @WebServlet(
         urlPatterns = {"/user/*"},
         initParams = {
-                @WebInitParam(name = "USER_VIEW",value = "user.jsp")
+                @WebInitParam(name = "USER_VIEW",value = "/user.jsp")
         }
 )
 
@@ -38,10 +38,10 @@ public class User extends HttpServlet {
             Blah blah = new Blah();
             blah.setUsername(usrname);
             List<Blah> blahs = userService.getBlahs(blah);
+
             req.setAttribute("blahs",blahs);
         }
         req.setAttribute("username",usrname);
-        // 一直在doget里面执行,不执行下面方法,问题不知道在哪里???
         req.getRequestDispatcher(USER_VIEW).forward(req,resp);
     }
 }
