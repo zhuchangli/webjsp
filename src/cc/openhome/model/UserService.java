@@ -11,6 +11,9 @@ public class UserService {
         this.USERS = USERS;
     }
 
+    // 用以保存最新的发表的消息
+    private LinkedList <Blah> newest = new LinkedList<Blah>();
+
     public boolean isInvalidUsername(String username){
         for(String file : new File(USERS).list()){
             if(file.equals(username)){
@@ -118,6 +121,11 @@ public class UserService {
                 new OutputStreamWriter(new FileOutputStream(file),"UTF-8"));
         writer.write(blah.getTxt());
         writer.close();
+
+        newest.addFirst(blah);
+        if(newest.size() > 20){
+            newest.removeLast();
+        }
     }
 
     public void deleteBlah(Blah blah){
@@ -126,6 +134,7 @@ public class UserService {
         if(file.exists()){
             file.delete();
         }
+        newest.remove(blah);
     }
 
     public boolean isUerExisted(String username){
@@ -137,5 +146,9 @@ public class UserService {
             }
         }
         return false;
+    }
+
+    public List<Blah> getNewest(){
+        return newest;
     }
 }

@@ -1,5 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="openhome" tagdir="/WEB-INF/tags" %>
+
 <%--
   Date: 11/28/18 : 10:55 AM
 --%>
@@ -38,34 +40,12 @@
         ${ requestScope.blabla }</textarea><br>
     <button type="submit">送出</button>
 </form>
-<table style="text-align: left;width: 510px; height: 80px;"
-       border="0" cellpadding="2" cellspacing="2">
-    <thead>
-    <tr>
-        <th>
-            <hr>
-        </th>
-    </tr>
-    </thead>
-    <tbody>
-    <%
-        UserService userService = (UserService) application.getAttribute("userService");
-        List<Blah> blahs = userService.getBlahs(blah);
-        request.setAttribute("memblah", blahs);
-    %>
-    <c:forEach var="blah" items="${requestScope.memblah}">
-        <tr>
-            <td style="vertical-align: top">${blah.username}<br>
-                <c:out value="${blah.txt}"/><br>
-                <fmt:formatDate value="${blah.date}" type="both"
-                                dateStyle="full" timeStyle="full"/>
-                <a href="delete.do?message=${blah.date.time}">删除</a>
-                <hr>
-            </td>
-        </tr>
-    </c:forEach>
-    </tbody>
-</table>
+<%
+    UserService userService = (UserService) application.getAttribute("userService");
+    List<Blah> blahs = userService.getBlahs(blah);
+    request.setAttribute("blahs", blahs);
+%>
+<openhome:Blahs/>
 <hr style="width: 100px; height: 1px">
 </body>
 </html>
