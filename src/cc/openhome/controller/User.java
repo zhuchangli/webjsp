@@ -18,7 +18,7 @@ import java.util.List;
 @WebServlet(
         urlPatterns = {"/user/*"},
         initParams = {
-                @WebInitParam(name = "USER_VIEW",value = "user.jsp")
+                @WebInitParam(name = "USER_VIEW",value = "/user.jsp")
         }
 )
 

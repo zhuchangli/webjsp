@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 
-@WebServlet(urlPatterns = {"/login.do"},initParams = {
-        @WebInitParam(name = "SUCESS_VIEW",value = "member.jsp"),
-        @WebInitParam(name = "ERROR_VIEW",value = "index.jsp")}
+@WebServlet(urlPatterns = {"/login.do"}, initParams = {
+        @WebInitParam(name = "SUCESS_VIEW", value = "member.jsp"),
+        @WebInitParam(name = "ERROR_VIEW", value = "index.jsp")}
 )
 
 public class Login extends HttpServlet {
-    private  String SUCESS_VIEW ;
-    private  String ERROR_VIEW ;
+    private String SUCESS_VIEW;
+    private String ERROR_VIEW;
 
     @Override
     public void init() throws ServletException {
@@ -32,14 +32,14 @@ public class Login extends HttpServlet {
 
         UserService userService = (UserService) getServletContext().getAttribute("userService");
         String page = ERROR_VIEW;
-        if(userService.checkLogin(username,pwd)){
+        if (userService.checkLogin(username, pwd)) {
 
-            req.getSession().setAttribute("login",username);
+            req.getSession().setAttribute("login", username);
             page = SUCESS_VIEW;
-        }else {
-            req.setAttribute("error","名称或密码错误");
+        } else {
+            req.setAttribute("error", "名称或密码错误");
             page = ERROR_VIEW;
         }
-        req.getRequestDispatcher(page).forward(req,resp);
+        req.getRequestDispatcher(page).forward(req, resp);
     }
 }
