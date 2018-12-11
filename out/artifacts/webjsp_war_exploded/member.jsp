@@ -1,18 +1,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="openhome" tagdir="/WEB-INF/tags" %>
-
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
+<sql:setDataSource dataSource="jdbc/gossip"/>
 <%--
   Date: 11/28/18 : 10:55 AM
 --%>
-<%@ page import="cc.openhome.model.UserService" %>
-<%@ page import="java.util.List" %>
-<%@ page import="cc.openhome.model.Blah" %>
-<%
-    String username = (String) request.getSession().getAttribute("login");
-    Blah blah = new Blah();
-    blah.setUsername(username);
-%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -40,11 +34,12 @@
         ${ requestScope.blabla }</textarea><br>
     <button type="submit">送出</button>
 </form>
-<%
-    UserService userService = (UserService) application.getAttribute("userService");
-    List<Blah> blahs = userService.getBlahs(blah);
-    request.setAttribute("blahs", blahs);
-%>
+
+<sql:query sql="SELECT * FROM t_blah WHERE name = ?" var="messages">
+    <sql:param value="${sessionScope.login}"/>
+</sql:query>
+<c:set var = "blahs" value="${messages.rows}" scope="request"/>
+
 <openhome:Blahs/>
 <hr style="width: 100px; height: 1px">
 </body>

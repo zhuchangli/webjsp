@@ -1,5 +1,6 @@
 package cc.openhome.controller;
 
+import cc.openhome.model.Account;
 import cc.openhome.model.UserService;
 
 import javax.servlet.ServletException;
@@ -37,13 +38,14 @@ public class    Register extends HttpServlet {
         UserService userService = (UserService)
                 getServletContext().getAttribute("userService");
 
+        Account account = new Account(username,password,email);
         List<String> errors = new ArrayList<String>();
 
         if (userService.isInvalidEmail(email)) {
             errors.add("未填写邮件或邮件格式不正确");
         }
 
-        if(userService.isInvalidUsername(username)){
+        if(userService.isUserExisted(account)){
             errors.add("用户名为空或已经存在");
         }
 
@@ -57,7 +59,7 @@ public class    Register extends HttpServlet {
             req.setAttribute("errors",errors);
         }else {
             resultPage = SUCCESS_VIEW;
-            userService.createUserData(email,username,password);
+            userService.add(account);
         }
 
         req.getRequestDispatcher(resultPage).forward(req,resp);

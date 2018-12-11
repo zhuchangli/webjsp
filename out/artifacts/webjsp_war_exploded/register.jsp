@@ -14,7 +14,7 @@
 <body>
 <img src="img/index.jpg" alt="首页照片" width="120" height="100"/>
 
-<c:if test ="${requestScope.errrors != null}">
+<c:if test ="${requestScope.errors != null}">
     <h1>新会员失败</h1>
     <ul style="color: rgb(255,0,0);">
         <c:forEach var="error" items="${requestScope.errors}">
