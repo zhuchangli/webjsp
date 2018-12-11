@@ -3,6 +3,7 @@ package cc.openhome.controller;
  * created by on 12/2/18
  */
 
+import cc.openhome.model.Account;
 import cc.openhome.model.Blah;
 import cc.openhome.model.UserService;
 
@@ -34,7 +35,8 @@ public class User extends HttpServlet {
         UserService userService = (UserService) getServletContext().getAttribute("userService");
 
         String usrname = req.getPathInfo().substring(1);
-        if(userService.isUerExisted(usrname)){
+        Account account = new Account(usrname);
+        if(userService.isUserExisted(account)){
             Blah blah = new Blah();
             blah.setUsername(usrname);
             List<Blah> blahs = userService.getBlahs(blah);

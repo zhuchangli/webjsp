@@ -9,7 +9,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
@@ -43,8 +42,6 @@ public class Delete extends HttpServlet {
 
         UserService userService = (UserService) getServletContext().getAttribute("userService");
         userService.deleteBlah(blah);
-
-        //userService.deleteMessage(username,message);
 
         resp.sendRedirect(SUCCESS_VIEW);
     }

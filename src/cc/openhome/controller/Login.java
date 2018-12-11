@@ -1,5 +1,6 @@
 package cc.openhome.controller;
 
+import cc.openhome.model.Account;
 import cc.openhome.model.UserService;
 
 import javax.servlet.ServletException;
@@ -30,11 +31,17 @@ public class Login extends HttpServlet {
         String username = req.getParameter("username");
         String pwd = req.getParameter("password");
 
-        UserService userService = (UserService) getServletContext().getAttribute("userService");
-        String page = ERROR_VIEW;
-        if (userService.checkLogin(username, pwd)) {
+        Account account = new Account(username,pwd);
 
-            req.getSession().setAttribute("login", username);
+        UserService userService = (UserService) getServletContext().getAttribute("userService");
+
+        String page = ERROR_VIEW;
+
+        if (userService.isUserExisted(account) && userService.checkLogin(account)) {
+
+             req.getSession().setAttribute("login", username);
+            //req.getSession().setAttribute("login", account);
+
             page = SUCESS_VIEW;
         } else {
             req.setAttribute("error", "名称或密码错误");

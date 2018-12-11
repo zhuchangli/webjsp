@@ -1,4 +1,5 @@
-package cc.openhome.controller;
+package cc.openhome.web;
+
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;

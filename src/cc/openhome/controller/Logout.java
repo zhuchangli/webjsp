@@ -1,5 +1,8 @@
 package cc.openhome.controller;
 
+import cc.openhome.model.Account;
+import cc.openhome.model.UserService;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -21,7 +24,12 @@ public class Logout extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        if(req.getSession().getAttribute("login") != null){
+        if(req.getSession().getAttribute("account") != null){
+            /*
+            Account a = (Account) req.getSession().getAttribute("account");
+            UserService userService = (UserService) getServletContext().getAttribute("userService");
+            userService.delete(a);
+            */
             req.getSession().invalidate();
         }
         resp.sendRedirect(LOGIN_VIEW);

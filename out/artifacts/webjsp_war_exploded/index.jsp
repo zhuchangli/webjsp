@@ -47,6 +47,7 @@
         <li>闲聊聊</li>
         <li>瞎写写</li>
     </ul>
+    <c:set var="isIndex" value="boolean"/>
     <openhome:Blahs/>
 </div>
 </body>

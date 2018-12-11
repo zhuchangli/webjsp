@@ -1,4 +1,4 @@
-package cc.openhome.controller;
+package cc.openhome.web;
 
 
 import javax.servlet.http.HttpServletRequest;
